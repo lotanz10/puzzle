@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>פAזל</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="img/Picture1.png"/> <!--הלוגו של המשחק שלכם-->  
+                <p>פAזל
+</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p><b>אודות</b></p>
+            <img id="logoabout" src="img/Picture1.png" />
+            <br>
+            <br>
+            <br>
+            <h2 id="centertext">אפיון ופיתוח: לוטן צוקר וסתיו ליברובסקי</h2>
+            <h3 id="centertext">
+                פותח במסגרת פרויקט בקורסים:
+            </h3>
+            <h3 id="centertext">
+                סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט
+            </h3>
+            <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+            <img id="logoabouthit" src="img/Picture2hit.jpg" />
+            <p>
+                מכון טכנולוגי חולון
+            </p>
+
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>
+        </div>
+		
+		<div id="copyrightDiv" class="popUp bounceInDown hide">
+            <a class="closecopyright">X</a>
+
+
+        </div>
+        
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="Puzzle.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
